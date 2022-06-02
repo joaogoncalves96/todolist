@@ -1,13 +1,15 @@
-import './App.css';
-import Parent from './components/Parent';
+import "./App.css";
+import ListProvider from "./components/ListProvider";
+import Rotas from "./rotas/Rotas";
 
 function App() {
-  console.log("asd")
   return (
     <>
-    <Parent />
+      <ListProvider >
+        <Rotas /> 
+      </ListProvider>
     </>
-  )
+  );
 }
 
 export default App;
